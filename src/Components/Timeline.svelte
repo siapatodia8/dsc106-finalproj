@@ -28,7 +28,7 @@
       <div class="timeline">
         {#each lebronTimeline as item}
           <div class="timeline-item">
-            <div class="circle">
+            <div class="circle1">
               <span class="year">{item.year}</span>
             </div>
             <div class="event-details">
@@ -44,7 +44,7 @@
       <div class="timeline">
         {#each jordanTimeline as item}
           <div class="timeline-item">
-            <div class="circle">
+            <div class="circle2">
               <span class="year">{item.year}</span>
             </div>
             <div class="event-details">
@@ -87,7 +87,7 @@
       margin-bottom: 40px;
     }
   
-    .circle {
+    .circle1, .circle2 {
       width: 60px; 
       height: 60px; 
       background-image: url('https://img2.svgdesigns.com/printart/xlarge/Art_Boutique_Butterfly/PGAB2343.webp');
@@ -100,7 +100,20 @@
       align-items: center;
     }
   
-    .circle::after {
+    .circle1::after {
+      content: '';
+      position: absolute;
+      width: 2px; /* Width of the line */
+      height: 100%; /* Height of the line */
+      background-color: black; /* Color of the line */
+      top: 100%; /* Position below the circle */
+      left: 50%; /* Centered horizontally */
+      transform: translateX(-50%); /* Centered horizontally */
+      z-index: -1; /* Behind the circle */
+      
+    }
+
+    .circle2::after {
       content: '';
       position: absolute;
       width: 2px; /* Width of the line */
@@ -113,7 +126,17 @@
       
     }
   
-    .circle .year {
+    .circle1 .year {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      color: #00008B ;
+      font-weight: bold;
+    }
+
+    .circle2 .year {
       position: absolute;
       top: 50%;
       left: 50%;

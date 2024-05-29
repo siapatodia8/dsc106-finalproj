@@ -4,6 +4,7 @@
   import Intro from "./Components/Intro.svelte";
   import SalaryProgression from "./Components/SalaryProgression.svelte";
   import InteractivePoints from "./Components/InteractivePoints.svelte";
+  import InteractiveMins from "./Components/InteractiveMins.svelte";
   import Conclusion from "./Components/Conclusion.svelte";
   import Resources from "./Components/Resources.svelte";
   import MJvsLebron from "./Components/MJvsLebron.svelte";
@@ -16,6 +17,7 @@
 <MJvsLebron />
 <SalaryProgression />
 <InteractivePoints />
+<InteractiveMins />
 <Timeline />
 <Conclusion />
 <Resources />
