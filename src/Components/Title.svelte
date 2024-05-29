@@ -1,8 +1,8 @@
 <section id="intro">
-  <h1 id="intro-hed">Title Of The Article</h1>
-  <h1 class="intro-sub">Subtitle of the article.</h1>
+  <h1 id="intro-hed">Who's The NBA G.O.A.T. ?</h1>
+  <br><br>
   <h3 id="intro__date">
-    <a href="https://twitter.com/" target="_blank">Author Name</a>, Month Year
+    <a  target="_blank"><b>Jovanna Fernando, Lewis Weng, Sia Patodia </b></a> <br>May, 2024
   </h3>
 </section>
 
@@ -26,7 +26,7 @@
   }
 
   .intro-sub {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--squid-ink);
     text-align: center;
     margin: 1rem;
