@@ -25,5 +25,7 @@ npm run build
 
 ### Members
 Jovanna Fernando [jovannafernando](https://github.com/jovannafernando)
+
 Lewis Weng [leweng03](https://github.com/leweng03)
+
 Sia Patodia [siapatodia8](https://github.com/siapatodia8)
