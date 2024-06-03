@@ -25,6 +25,10 @@
   --primary: var(--darksquidink);
 }
 
+html, body {
+  font-size: 20px;
+}
+
 body {
   font-family: var(--font-main);
   overflow-x: hidden;
@@ -54,10 +58,20 @@ body {
   max-width: 600px;
 }
 
-.centered {
+/* .centered {
   margin: auto;
   max-width: 45rem;
   max-width: 600px;
+} */
+
+.centered {
+  margin: auto;
+  text-align: center; /* Align everything within this container to center */
+  max-width: 45rem;
+}
+
+.centered > * {
+  text-align: left; /* Align the text to the left within this container */
 }
 
 .bold {
