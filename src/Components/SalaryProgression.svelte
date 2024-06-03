@@ -143,6 +143,10 @@
     <h1>Salaries of Michael Jordan vs LeBron James</h1>
     <svg id="salary-chart"></svg>
     <div class="tooltip"></div>
+    <p>
+        We can see that Jordan's salary has had 2 very steep changes, one from season 11 to season 12, the other from season 13 to season 14. Season 11 was the end of his 8-year contract, which also ended the year he won a championship. In that year, the Knicks offered him a ludicrous amount of money, and to keep Jordan on the team, the Bulls offered him $30 million dollars a year. In season 14, he returned to basketball after retiring. He played for the Washington Wizards, a team he part-owned. Jordan took a lower salary to help with the team's salary cap.<br><br>
+        When we trace the blue line, we can see that James' salary is consistently increasing. From the 6th season to the 7th season, we can see that James' salary went down. This is the year he switched from the Miami Heat to the Cleveland Cavaliers. Another thing to note is the salary increase from season 12 to season 13. After James' won the NBA Finals with the Cavaliers in season 12, his salary increased by $8 million.
+    </p>
 </div>
 
 <style>
@@ -151,6 +155,11 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+    .chart-container p {
+        max-width: 600px;
+    margin: 1rem auto;
+    padding-top: 3rem;
     }
     #salary-chart {
         margin: auto;
