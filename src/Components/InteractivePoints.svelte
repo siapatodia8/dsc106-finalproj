@@ -102,7 +102,7 @@
 </script>
 
 <div class="intro-paragraph">
-  <p>This is an introductory paragraph.</p>
+  <p></p>
 </div>
 
 <div class="chart-container">
@@ -111,8 +111,10 @@
       <svg bind:this={lbjSvgElement}></svg>
     </div>
     <div class="textbox">
-      <h1>Points Per Game</h1>
-      <p>This is a text box between the two circular bar plots.</p>
+      <h1>Points Per Game: James: 27.1, Jordan: 30.1
+        </h1>
+      <p>Across both careers, Michael Jordan has averaged 3 more points 
+        than LeBron James. Both athletes play an average of 38 minutes in a 48 minute game.</p>
     </div>
     <div class="chart">
       <svg bind:this={mjSvgElement}></svg>

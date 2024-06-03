@@ -6,8 +6,8 @@
             const margin = {
                 top: 70, 
                 bottom: 80, 
-                left: 100, 
-                right: 50,
+                left: 150, 
+                right: 90,
             };
             const width = 800 - margin.left - margin.right;
             const height = 600 - margin.top - margin.bottom;
@@ -140,7 +140,7 @@
     </script>
 
 <div class="chart-container">
-    <h1>Salaries of Michael Jordan vs LeBron James</h1>
+   
     <svg id="salary-chart"></svg>
     <div class="tooltip"></div>
     <p>

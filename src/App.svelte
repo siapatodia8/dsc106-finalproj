@@ -1,7 +1,8 @@
 <script>
   import Meta from "./Meta.svelte";
   import Title from "./Components/Title.svelte";
-  import Intro from "./Components/Intro.svelte";
+
+  import Scoreboard from "./Components/Scoreboard.svelte";
   import SalaryProgression from "./Components/SalaryProgression.svelte";
   import InteractivePoints from "./Components/InteractivePoints.svelte";
   import InteractiveMins from "./Components/InteractiveMins.svelte";
@@ -12,18 +13,26 @@
   import Resources from "./Components/Resources.svelte";
   import MJvsLebron from "./Components/MJvsLebron.svelte";
   import Timeline from "./Components/Timeline.svelte";
+
 </script>
 
 <Meta />
-<Intro />
+
 <Title />
+
 <MJvsLebron />
+<Scoreboard />
 <SalaryProgression />
-<InteractivePoints />
+<Scoreboard />
+<InteractivePoints /> 
 <InteractiveMins />
 <InteractiveAssists />
 <InteractiveSteals />
 <InteractiveBlocks />
+<Scoreboard />
 <Timeline />
+<Scoreboard />
 <Conclusion />
 <Resources />
+
+

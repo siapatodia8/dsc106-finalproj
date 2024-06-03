@@ -107,8 +107,10 @@
         <svg bind:this={lbjSvgElement}></svg>
       </div>
       <div class="textbox">
-        <h1>Blocks Per Game</h1> 
-        <p>This is a text box between the two circular bar plots.</p>
+        <h1>Blocks Per Game: James: 0.7, Jordan: 0.8
+        </h1> 
+        <p>Although James has his iconic chase down "blocked by James", both players have around the same number of blocks per game.
+        </p>
       </div>
       <div class="chart">
         <svg bind:this={mjSvgElement}></svg>

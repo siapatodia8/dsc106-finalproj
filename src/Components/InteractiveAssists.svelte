@@ -104,8 +104,11 @@
         <svg bind:this={lbjSvgElement}></svg>
       </div>
       <div class="textbox">
-        <h1>Assists Per Game</h1>
-        <p>This is a text box between the two circular bar plots.</p>
+        <h1>Assists Per Game: James: 7.4, Jordan: 5.8
+          </h1>
+        <p>James has less points than Jordan, but he has more assists. 
+          This suggests that he gives up the ball more often and enables 
+          his teammates rather than shooting the ball himself.</p>
       </div>
       <div class="chart">
         <svg bind:this={mjSvgElement}></svg>
