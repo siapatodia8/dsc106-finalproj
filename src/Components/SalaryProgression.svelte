@@ -154,7 +154,6 @@
     }
     #salary-chart {
         margin: auto;
-        max-height: 55vh;
         width: 50%;
         margin: 1rem auto;
     }
