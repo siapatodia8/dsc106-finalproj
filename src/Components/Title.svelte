@@ -1,5 +1,5 @@
 <section id="intro">
-  <h1 id="intro-hed">Who's The NBA G.O.A.T. ?</h1>
+  <h1 id="intro-hed">Who's The NBA GOAT ?</h1>
   <br><br>
   <h3 id="intro__date">
     <a  target="_blank"><b>Jovanna Fernando, Lewis Weng, Sia Patodia </b></a> <br>May, 2024
