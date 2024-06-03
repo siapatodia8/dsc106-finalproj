@@ -1,32 +1,105 @@
 <script>
+  import { onMount } from 'svelte';
+
+  let data = [
+    { name: "LJ", score: 0 },
+    { name: "MJ", score: 0 }
+  ];
+
+  let currentTime = "00:00";
+
+  // onMount(() => {
+  //   // Example: Update scores after 2 seconds
+  //   setTimeout(() => {
+  //     data[0].score = 10;
+  //     data[1].score = 5;
+  //   }, 2000);
+  // });
 </script>
 
 <section>
-  <p class="body-text">
-    <b>1. What have we done so far?</b>
-    <br>
-    So far we have structured our website and started implementing our ideas for the website. We have structured our websites so that it includes all the sections we have planned. Although we still need to customise it and make further changes, the basic structure is in place, and it contains simple versions of the visualisations we want. For instance, we have a static line chart, static time-line and a circular bar plot. Moving forward, we will add more categories and interactive features to our visualisations and continue to customise the website. Additionally, we have gathered most of the facts we want to include about the players, such as milestones and all-time stats. We have also decided on a color scheme for the website based on the jersey colors of the two players. This will make the website more coherent and help users easily distinguish between the two players' data.
-    <br>
-    <br>
-    <b>2. What will be the most challenging of your project to design and why?</b>
-    <br>
-    The most challenging parts of the project will be to add interactive features to the circular bar plot and to improve the timeline visualisation. We have structured the website, but making it look professional will take time as well. 
 
-    We want to add interactive features to the bar plot to make it more impactful. Currently, the plot shows the total number of positions per season. We aim to include tooltips with additional information (e.g., the number of games played). To achieve this, we need to examine our data more closely and ensure it is structured as we expect.
+  <div id="scoreboard" class="scoreboard">
+    <div class="team">
+      <div class="team-name" style="font-size: 48px;">{data[0].name}</div>
+      <div class="team-score" style="color: #D22B2B; font-size: 75px;">
+        <span class="score-number">{data[0].score}</span>
+        <div class="overlay"></div> <!-- Black square with 50% opacity -->
+      </div>
+    </div>
+    <div class="time" style="color: #FFA500; font-size: 68px; border-right: 3px solid white; border-left: 3px solid white; border-bottom: 3px solid white; padding: 20px;">{currentTime.split(':')[0]}<span style="color: white;">:</span>{currentTime.split(':')[1]}</div>
+    <div class="overlay2"></div>
+    <div class="team">
+      <div class="team-name" style="font-size: 48px;">{data[1].name}</div>
+      <div class="team-score" style="color: #D22B2B; font-size: 75px;">
+        <span class="score-number">{data[1].score}</span>
+        <div class="overlay"></div> <!-- Black square with 50% opacity -->
+      </div>
+    </div>
+  </div>
 
-    The timeline is currently a static visualisation. Transforming it into an interactive and more appealing feature will involve significant rework. Structuring the timeline to include scroll features will allow users to navigate seamlessly. Implementing smooth scrolling and ensuring that events load dynamically as users scroll will enhance the user experience. We aim to highlight the most significant events in a meaningful way, using visual cues such as colour changes, larger icons, or animations to draw attention to key events.
+  <style>
+    .scoreboard {
+      width: 650px;
+      height: 200px;
+      text-align: center;
+      margin: 50px auto 0;
+      background-color: #0818A8;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 4px solid #949494;
+    }
 
-    This will be challenging as it is very time-consuming and requires extensive research on how to implement these changes and what types of interactions to add 
-    <br>
+    .team {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      color: white;
+    }
 
+    .team-name {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-  </p>
+    .team-score {
+      font-size: 48px;
+      position: relative; /* Necessary for overlay */
+    }
+
+    .score-number {
+      position: relative; /* Necessary for overlay */
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 5px; /* Adjust as needed */
+      left: 50%; /* Center the overlay */
+      transform: translateX(-50%); /* Center the overlay */
+      width: 75px; /* Adjust width as needed */
+      height: 75px; /* Adjust height as needed */
+      background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+      border-radius: 8%; /* Round the edges */
+    }
+
+    .overlay2 {
+      position: absolute;
+      top: 18px; /* Adjust as needed */
+      left: 50%; /* Center the overlay */
+      transform: translateX(-50%); /* Center the overlay */
+      width: 220px; /* Adjust width as needed */
+      height: 85px; /* Adjust height as needed */
+      background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+      border-radius: 8%; /* Round the edges */
+    }
+
+    .time {
+      font-size: 36px;
+      margin-top: -20px;
+    }
+  </style>
 </section>
-
-<style>
-  .body-text{
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-</style>

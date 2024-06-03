@@ -12,8 +12,8 @@
     const margin = { top: 50, right: 0, bottom: 80, left: 0 },
           width = 500 - margin.left - margin.right,
           height = 500 - margin.top - margin.bottom,
-          innerRadius = 90,
-          outerRadius = Math.min(width, height) / 2;
+          innerRadius = 60,
+          outerRadius = Math.min(width, height) / 2 - 30;
 
     const createChart = (data, svgElement, color) => {
       const svg = d3.select(svgElement)
@@ -87,7 +87,7 @@
 
 
     svg.append("text")
-        .text(`Average: ${averagePPG.toFixed(2)}`)
+        .text(`Avg: ${averagePPG.toFixed(2)}`)
         .attr("text-anchor", "middle")
         .attr("dy", "0.35em")
         .style("font-size", "14px")
@@ -101,16 +101,20 @@
   });
 </script>
 
+<div class="intro-paragraph">
+  <p>This is an introductory paragraph.</p>
+</div>
 
 <div class="chart-container">
-  <h1 class="body-header" style="text-align: center;">PER GAME STATS</h1>
   <div class="chart-wrapper">
     <div class="chart">
-      <h1>LeBron James Points</h1>
       <svg bind:this={lbjSvgElement}></svg>
     </div>
+    <div class="textbox">
+      <h1>Points Per Game</h1>
+      <p>This is a text box between the two circular bar plots.</p>
+    </div>
     <div class="chart">
-      <h1>Michael Jordan Points</h1>
       <svg bind:this={mjSvgElement}></svg>
     </div>
   </div>
@@ -142,4 +146,28 @@
   margin: auto;
   }
 
+.textbox {
+  display: inline-block;
+  background-color: rgba(221, 221, 221, 0.3); 
+  /* border: 2px solid #000000;  */
+  padding: 20px; 
+  width: 650px;
+  height: 300px;
+  position: relative;
+  top: 80px;
+}
+
+.textbox h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.textbox p {
+  font-size: 14px;
+}
+
+.intro-paragraph {
+  text-align: center; 
+  margin-bottom: 20px; /* Add some space between the intro paragraph and the chart container */
+}
 </style>

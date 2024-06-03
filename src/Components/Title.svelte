@@ -11,7 +11,7 @@
     max-width: 600px;
     margin: 1rem auto;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 
   #intro-hed {
