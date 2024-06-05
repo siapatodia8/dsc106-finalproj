@@ -111,10 +111,11 @@
       <svg bind:this={lbjSvgElement}></svg>
     </div>
     <div class="textbox">
-      <h1>Points Per Game: James: 27.1, Jordan: 30.1
+      <h1>Points Per Game
         </h1>
-      <p>Across both careers, Michael Jordan has averaged 3 more points 
-        than LeBron James. Both athletes play an average of 38 minutes in a 48 minute game.</p>
+      <p>Average points per game (PPG) per season is a crucial statistic for evaluating NBA players as it directly measures their scoring ability, highlighting their offensive impact and consistency over time.
+         High PPG indicates a player's role as a primary scoring option and their reliability in generating points for the team.<br><br>
+        </p>
     </div>
     <div class="chart">
       <svg bind:this={mjSvgElement}></svg>
@@ -166,6 +167,7 @@
 
 .textbox p {
   font-size: 14px;
+  position: center;
 }
 
 .intro-paragraph {
