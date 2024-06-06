@@ -65,129 +65,133 @@ const mjDots = [
   });
 </script>
 
-<section>
-  <div id="scoreboard" class="scoreboard">
-    <div class="team">
-      <svg id="lj-dots" class="dot-matrix"></svg>
-      <div class="team-score">
-        <span class="score-number dot-matrix">{data[0].score}</span>
-        <div class="buttons">
-          <button on:click={() => incrementScore(0)}>+</button>
-          <button on:click={() => decrementScore(0)}>-</button>
-        </div>
-      </div>
-    </div>
+<p class="p-left"> Welcome to the ultimate showdown between LeBron James and Michael Jordan! Our interactive scoreboard lets you decide who comes out on top. Add or subtract points for each player as you dive into their stats, achievements, and legendary moments. Every time you see "Who do you think won this quarter?", cast your vote by adding a point to your favorite. Join the fun and help settle the greatest basketball debate of all time!
 
-    <div class="center">
-      <div class="time dot-matrix">{currentTime.split(':')[0]}<span>:</span>{currentTime.split(':')[1]}</div>
-      <div class="quarter">
-        <div class="dot-matrix">QTR</div>
-        <div class="quarter-number dot-matrix">{quarter}</div>
-      </div>
-    </div>
+</p>
 
-    <div class="team">
-      <svg id="mj-dots" class="dot-matrix"></svg>
-      <div class="team-score">
-        <span class="score-number dot-matrix">{data[1].score}</span>
-        <div class="buttons">
-          <button on:click={() => incrementScore(1)}>+</button>
-          <button on:click={() => decrementScore(1)}>-</button>
-        </div>
+<div id="scoreboard" class="scoreboard">
+  <div class="team">
+    <svg id="lj-dots" class="dot-matrix"></svg>
+    <div class="team-score">
+      <span class="score-number dot-matrix">{data[0].score}</span>
+      <div class="buttons">
+        <button on:click={() => incrementScore(0)}>+</button>
+        <button on:click={() => decrementScore(0)}>-</button>
       </div>
     </div>
   </div>
 
-  <style>
-    .scoreboard {
-      width: 650px;
-      height: 320px;
-      margin: 50px auto;
-      background-color: black;
-      padding: 20px;
-      border-radius: 10px;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 5px solid grey;
-    }
+  <div class="center">
+    <div class="time dot-matrix">{currentTime.split(':')[0]}<span>:</span>{currentTime.split(':')[1]}</div>
+    <div class="quarter">
+      <div class="dot-matrix">QTR</div>
+      <div class="quarter-number dot-matrix">{quarter}</div>
+    </div>
+  </div>
 
-    .team {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 200px;
-      color: white;
-    }
+  <div class="team">
+    <svg id="mj-dots" class="dot-matrix"></svg>
+    <div class="team-score">
+      <span class="score-number dot-matrix">{data[1].score}</span>
+      <div class="buttons">
+        <button on:click={() => incrementScore(1)}>+</button>
+        <button on:click={() => decrementScore(1)}>-</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    .team-score {
-      font-size: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 40px;
-    }
+<style>
+  .scoreboard {
+    width: 650px;
+    height: 320px;
+    margin: 50px auto;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid grey;
+    margin-top: 90px;
+  }
 
-    .score-number {
-      margin-bottom: 25px;
-      border: 2px solid white; /* Add this line to add a white border */
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    color: white;
+  }
+
+  .team-score {
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .score-number {
+    margin-bottom: 25px;
+    border: 2px solid white;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-    }
+  }
 
-    .buttons {
-      display: flex;
-      gap: 5px;
-      margin-top: -20px;
-    }
+  .buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: -20px;
+  }
 
-    .time {
-      font-size: 58px;
+  .time {
+    font-size: 58px;
     color: red;
     margin-bottom: 20px;
-    border: 2px solid white; /* Add this line to add a white border */
+    border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    }
+  }
 
-    .quarter {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .quarter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .quarter-number {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+  .quarter-number {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
 
-    button {
-      font-size: 24px;
-      padding: 5px 10px;
-      cursor: pointer;
-      background-color: black;
-      border: none;
-      border-radius: 5px;
-      color: white;
-    }
+  button {
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
 
-    button:hover {
-      background-color: #ddd;
-    }
+  button:hover {
+    background-color: #ddd;
+  }
 
-    /* .dot-matrix {
-      font-family: 'DotMatrix', monospace;
-      letter-spacing: 1px;
-    } */
+  p {
+  text-align: center; 
+  max-width: 700px; 
+  margin: 0 auto; 
+  margin-top: 90px;
+}
 
-    /* @font-face {
-      font-family: 'DotMatrix';
-      src: url('path/to/your/dot-matrix-font.ttf') format('truetype');
-    } */
-  </style>
-</section>
+.p-left {
+  text-align: left;
+}
 
-
-
+</style>

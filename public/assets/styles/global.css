@@ -1,8 +1,10 @@
 :root {
   /* Fonts 
   */
-  --font-main: "Verdana";
-  --font-heavy: "Arial";
+  /* --font-main: "Verdana"; */
+  --font-main: "Georgia", serif;
+  /* --font-heavy: "Arial"; */
+  --font-heavy: "Georgia", serif;
 
 
   --black: #232f3e;
@@ -43,7 +45,7 @@ body {
   font-size: 18px;
   line-height: 1.5em;
   font-family: var(--font-main);
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .body-header {
@@ -55,14 +57,9 @@ body {
   font-family: var(--font-heavy);
   padding-top: 2rem;
   padding-bottom: 0.5rem;
-  max-width: 600px;
+  max-width: 700px;
 }
 
-/* .centered {
-  margin: auto;
-  max-width: 45rem;
-  max-width: 600px;
-} */
 
 .centered {
   margin: auto;
@@ -89,9 +86,14 @@ h1 {
 }
 
 p {
-  color: var(--squid-ink);
+  /* color: var(--squid-ink); */
+  color: #555555;
   font-family: var(--font-main);
-  font-weight: none;
+  font-weight: normal;
+  font-size: 26px; /* Increased font size */
+  /* text-align: center; 
+  max-width: 800px; 
+  margin: 0 auto;  */
 }
 
 /* mobile */
