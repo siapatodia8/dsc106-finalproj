@@ -23,13 +23,23 @@
 <MJvsLebron />
 <Scoreboard />
 <SalaryProgression />
+<<<<<<< HEAD
+=======
+<!-- <Scoreboard /> -->
+>>>>>>> c93ac6d (updates)
 <InteractivePoints /> 
 <InteractiveMins />
 <InteractiveAssists />
 <InteractiveSteals />
 <InteractiveBlocks />
+<<<<<<< HEAD
 
 <Timeline />
+=======
+<!-- <Scoreboard /> -->
+<Timeline />
+<!-- <Scoreboard /> -->
+>>>>>>> c93ac6d (updates)
 <Conclusion />
 <Resources />
 

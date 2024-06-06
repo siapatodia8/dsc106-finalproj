@@ -1,68 +1,72 @@
 <script>
-  let lebronTimeline = [
-    { year: "1984", event: "" },
-    { year: "1984", event: "" },
-    { year: "1985", event: "" },
-    { year: "1985", event: "" },
-    { year: "1988", event: "" },
-    { year: "1994", event: "" },
-    { year: "1996", event: "" },
-    { year: "2001", event: "" },
-    { year: "2003", event: "Number 1 overall pick to the Cleveland Cavaliers" },
-    { year: "2004", event: "Rookie of the year"},
-    { year: "2006", event: "Youngest to ever score 5000 points" },
-    { year: "2008", event: "Olympic gold medal" },
-    { year: "2009", event: "MVP" }
+  let Timeline = [
+    { year: "1983", lebron: "", jordan: "College basketball national player of the year", funfact: "testing 123" },
+    { year: "1984", lebron: "", jordan: "3rd overall pick to the Chicago Bulls + Olympic gold medal", funfact: "" },
+    { year: "1985", lebron: "", jordan: "Rookie of the year + Air Jordans released", funfact: "" },
+    { year: "1988", lebron: "", jordan: "NBA MVP and Defensive Player of the Year", funfact: "" },
+    { year: "1992", lebron: "", jordan: "Dream Team Gold Medal", funfact: "" },
+    { year: "1993", lebron: "", jordan: "Retired to pursue Baseball", funfact: "" },
+    { year: "1995", lebron: "", jordan: "Returned to the NBA", funfact: "'I’m back'" },
+    { year: "1996", lebron: "", jordan: "Featured in Space Jam", funfact: "" },
+    { year: "2003", lebron: "1st overall pick to the Cleveland Cavaliers", jordan: "Officially retired", funfact: "" },
+    { year: "2004", lebron: "Rookie of the year", jordan: "", funfact: "" },
+    { year: "2006", lebron: "Youngest to ever score 5000 points", jordan: "", funfact: "" },
+    { year: "2008", lebron: "Olympic gold medal and Becomes Cavs’ all-time leading scorer", jordan: "", funfact: "" },
+    { year: "2009", lebron: "First out of four NBA Most Valuable Player", jordan: "Induction into the basketball Hall of Fame", funfact: "" },
+    { year: "2012", lebron: "Sports Illustrated Sportsperson of the Year", jordan: "", funfact: "testing 124" },
+    { year: "2016", lebron: "", jordan: "Presidential Medal of Freedom", funfact: "" },
+    { year: "2018", lebron: "LeBron’s double-digit scoring record", jordan: "", funfact: "" },
+    { year: "2021", lebron: "Featured in Space Jam 2", jordan: "", funfact: "" },
+    { year: "2023", lebron: "LeBron becomes NBA’s all-time leading scorer", jordan: "", funfact: "" }
   ];
 
-  let jordanTimeline = [
-    { year: "1984", event: "Selected 3rd overall by the Chicago Bulls (College Player of the Year)" },
-    { year: "1984", event: "Olympic gold medal" },
-    { year: "1985", event: "Rookie of the year" },
-    { year: "1985", event: "Shoes in his name (Air Jordans)" },
-    { year: "1988", event: "NBA MVP" },
-    { year: "1994", event: "Retired from basketball to play baseball" },
-    { year: "1996", event: "Space Jam - Hit movie" },
-    { year: "2001", event: "Washington Wizards - Tried again but failed" },
-    { year: "2003", event: "" },
-    { year: "2004", event: "" },
-    { year: "2006", event: "" },
-    { year: "2008", event: "" },
-    { year: "2009", event: "Hall of Fame" }
-  ];
+  let tooltipText = "";
+  let hoveredIndex = -1;
+  let tooltipHeading = "";
+
+  function showTooltip(index, item) {
+    if (item.funfact !== "") {
+      tooltipText = item.funfact;
+      hoveredIndex = index;
+      tooltipHeading = item.lebron ? item.lebron : item.jordan;
+    }
+  }
+
+  function hideTooltip() {
+    tooltipText = "";
+    hoveredIndex = -1;
+    tooltipHeading = "";
+  }
 </script>
 
 
 
 <div class="timeline-container">
-  <div class="timeline-center">
-    <div class="timeline">
-      {#each lebronTimeline as item}
-        <div class="timeline-item">
-          <div class="circle1 {item.event === '' ? 'empty' : ''}">
-            <span class="year">{item.year}</span>
-          </div>
-          <div class="event-details">
-            <span class="event">{item.event}</span>
-          </div>
+  <div class="timeline">
+    {#each Timeline as item, index}
+      <div class="timeline-item">
+        <div class="event-details left">
+          <span class="event">{item.lebron}</span>
         </div>
-      {/each}
-    </div>
-  </div>
-
-  <div class="timeline-center">
-    <div class="timeline">
-      {#each jordanTimeline as item}
-        <div class="timeline-item">
-          <div class="circle2 {item.event === '' ? 'empty' : ''}">
-            <span class="year">{item.year}</span>
-          </div>
-          <div class="event-details">
-            <span class="event">{item.event}</span>
-          </div>
+        <div 
+          class="circle {item.funfact ? 'has-funfact' : ''}" 
+          style="background-image: url('https://st2.depositphotos.com/2485347/5763/v/450/depositphotos_57633389-stock-illustration-basketball-ball.jpg')"
+          on:mouseover={() => showTooltip(index, item)}
+          on:mouseout={() => hideTooltip()}
+        >
+          <span class="year">{item.year}</span>
+          {#if hoveredIndex === index && item.funfact}
+            <div class="tooltip">
+              <h3>{tooltipHeading}</h3>
+              <p><br><br><br>{tooltipText}</p>
+            </div>
+          {/if}
         </div>
-      {/each}
-    </div>
+        <div class="event-details right">
+          <span class="event">{item.jordan}</span>
+        </div>
+      </div>
+    {/each}
   </div>
 </div>
 
@@ -77,81 +81,92 @@
   .timeline-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
   }
 
-  .timeline-center {
-    width: 50%;
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(255, 253, 253, 1); 
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    pointer-events: none;
+    z-index: 9999;
+    width: 900px; /* Increased width for a larger tooltip box */
+    height: 500PX;
+    top: 70px; /* Position the tooltip below the circle */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tooltip h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+    text-align: center;
+  
+  }
+
+  .tooltip p {
+    margin: 0;
+    text-align: center;
   }
 
   .timeline-item {
-    margin-left: 30px;
-    margin-right: 30px;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    position: relative;
-  }
-
-  .circle1,
-  .circle2 {
-    width: 60px;
-    height: 60px;
-    background-image: url('https://img2.svgdesigns.com/printart/xlarge/Art_Boutique_Butterfly/PGAB2343.webp');
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-  }
-
-  .circle1::after,
-  .circle2::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 50vh; /* Stretch the line to cover the entire viewport height */
-    background-color: black;
-    top: 0vh; /* Position the line so it extends above and below the circles */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-
-  
-
-  .circle1.empty,
-  .circle2.empty {
-    opacity: 0;
-  }
-
-  .circle1 .year,
-  .circle2 .year {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    font-weight: bold;
-    color: black; /* Default color */
   }
 
   .event-details {
+    flex: 1;
+  }
+
+  .circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 
-  .timeline-item .year {
+  .circle.has-funfact {
+    border: 3px solid rgb(239, 239, 63); 
+  }
+
+  .circle .year {
+    position: absolute;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 5px;
+    color: white;
   }
 
-  .timeline-item .event {
-    margin-bottom: 5px;
+  .event-details {
+    flex: 1;
+    text-align: center; 
+    padding: 0 30px;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .event-details {
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 </style>

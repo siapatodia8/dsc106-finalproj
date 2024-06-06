@@ -9,8 +9,8 @@
 
 <style>
   #intro {
-    max-width: 600px;
-    min-height: 1000px;
+    max-width: 800px;
+    min-height: 300px;
     margin: auto;
     text-align: center;
     padding-top: 1rem;
@@ -18,6 +18,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Places the image behind other content */
   }
 
   #intro-hed {
