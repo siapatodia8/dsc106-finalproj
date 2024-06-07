@@ -68,7 +68,7 @@ body {
 }
 
 .centered > * {
-  text-align: left; /* Align the text to the left within this container */
+  text-align: left; 
 }
 
 .bold {
@@ -91,9 +91,9 @@ p {
   font-family: var(--font-main);
   font-weight: normal;
   font-size: 26px; /* Increased font size */
-  /* text-align: center; 
+  text-align: center; 
   max-width: 800px; 
-  margin: 0 auto;  */
+  margin: 0 auto; 
 }
 
 /* mobile */

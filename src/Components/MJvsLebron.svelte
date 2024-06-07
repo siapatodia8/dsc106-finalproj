@@ -3,6 +3,20 @@
   import { select, selectAll } from "d3-selection";
 </script>
 
+<p class="p-left" >
+  <br><br><br>
+  When discussing basketball’s greatest of all times, 2 names are often brought up:
+  Michael Jordan and LeBron James. Before James, Jordan was the undisputed best basketball
+  player to grace the court. In Jordan’s 13 years of playing basketball, he has made 6 finals
+  and won all 6 of them, with both of them being a 3-peat. Not only did he win 6 out of 6 finals,
+  he was also named the Finals MVP in all of them and won multiple MVPs during this time. 
+
+  <br><br>In both of their careers, it is undeniable that both players were key towards their teams’ success and that those teams
+  wouldn’t have won those titles without them. In our website, we will compare the in-game statistics between these 2 GOAT
+  candidates to weigh their contributions to their team.
+  <br><br><br>
+</p>
+
 <section>
   <div class="section-container">
     <div class="image-container">
@@ -10,26 +24,25 @@
       <img id="chart2" src="https://www.freeiconspng.com/thumbs/lebron-james-png/lebron-james-png-8.png" alt="LeBron James image">
     </div>
     <div class="text-container">
-      <br><br><br><br><br>
+      <br><br><br>
       <h1 class='step-title'></h1>
-      <br><br>
-      <p>When discussing basketball’s greatest of all times, 2 names are often brought up:
-        Michael Jordan and LeBron James. Before James, Jordan was the undisputed best basketball
-        player to grace the court. In Jordan’s 13 years of playing basketball, he has made 6 finals
-        and won all 6 of them, with both of them being a 3-peat. Not only did he win 6 out of 6 finals,
-        he was also named the Finals MVP in all of them and won multiple MVPs during this time. </p>
-
+      <br>
       <p>In recent years, James has been in the conversation for the greatest basketball player ever. As of 2024,
         James has played for 21 years and won 4 of the 10 finals he made. Amongst elite NBA players, LeBron has had
         one of the longest careers, with the longest being Vince Carter’s career lasting 22 years. </p>
-      <br><br><br><br>
+      <br><br>
       <p>While some people value Jordan’s 3-peats and 6 NBA rings, others value James’ longevity and his consistent high level
         of performance across all 21 years, with an average of 27.1 points per game. In those 21 years, his worst year was an
-        impressive 20 points per game in his rookie season, and his best year was 31.4 points per game in his 2005-06 season. </p>
-      <br><br><br><br>
-      <p>In both of their careers, it is undeniable that both players were key towards their teams’ success and that those teams
-        wouldn’t have won those titles without them. In our website, we will compare the in-game statistics between these 2 GOAT
-        candidates to weigh their contributions to their team.</p>
+        impressive 20 points per game in his rookie season, and his best year was 31.4 points per game in his 2005-06 season. 
+      </p>
+      <br><br>
+      <p>In recent years, James has been in the conversation for the greatest basketball player ever. As of 2024,
+        James has played for 21 years and won 4 of the 10 finals he made. Amongst elite NBA players, LeBron has had
+        one of the longest careers, with the longest being Vince Carter’s career lasting 22 years. </p>
+      <br><br>
+      <p>While some people value Jordan’s 3-peats and 6 NBA rings, others value James’ longevity and his consistent high level
+        of performance across all 21 years, with an average of 27.1 points per game. In those 21 years
+      </p>
     </div>
     <div class="image-container">
       <h1 class='step-title'>Michael Jordan</h1>
@@ -60,11 +73,11 @@
   }
 
   .player-name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 3rem;
+    font-weight: 550;
     margin-bottom: 1rem;
-    color: grey;
+    color: #333333;
   }
 
   .image-container img {
@@ -84,11 +97,11 @@
   }
 
   .step-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 3rem;
+    font-weight: 550;
     margin-bottom: 1rem;
-    color: grey;
+    color: #333333;
     text-align: center;
   }
 
@@ -105,7 +118,6 @@
     margin: auto;
     max-width: 700px;
     font-family: var(--font-main);
-    margin-bottom: 1rem;
   }
 
   .image-container {
@@ -141,6 +153,16 @@
       max-width: 150px;
     }
   }
+
+  p {
+  text-align: center; 
+  max-width: 700px; 
+  margin: 0 auto; 
+}
+
+.p-left {
+  text-align: left;
+}
 </style>
 
 

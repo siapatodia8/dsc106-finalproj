@@ -65,7 +65,7 @@ const mjDots = [
   });
 </script>
 
-<p class="p-left"> Welcome to the ultimate showdown between LeBron James and Michael Jordan! Our interactive scoreboard lets you decide who comes out on top. Add or subtract points for each player as you dive into their stats, achievements, and legendary moments. Every time you see "Who do you think won this quarter?", cast your vote by adding a point to your favorite. Join the fun and help settle the greatest basketball debate of all time!
+<p class="p-left"> Welcome to the ultimate showdown between LeBron James and Michael Jordan! Our interactive scoreboard lets you decide who comes out on top. Add or subtract points for each player as you dive into their stats, achievements, and legendary moments. Every time you see "Who do you think won this round?", cast your vote by adding a point to your favorite. Join the fun and help settle the greatest basketball debate of all time!
 
 </p>
 
@@ -103,7 +103,7 @@ const mjDots = [
 
 <style>
   .scoreboard {
-    width: 650px;
+    width: 700px;
     height: 320px;
     margin: 50px auto;
     background-color: black;
