@@ -190,8 +190,8 @@ const mjDots = [
   margin-top: 90px;
 }
 
-.p-left {
+/* .p-left {
   text-align: left;
-}
+} */
 
 </style>

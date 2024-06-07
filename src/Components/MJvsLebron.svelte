@@ -160,9 +160,9 @@
   margin: 0 auto; 
 }
 
-.p-left {
+/* .p-left {
   text-align: left;
-}
+} */
 </style>
 
 

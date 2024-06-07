@@ -223,7 +223,7 @@
   padding-top: 50px;
 }
 
-.p-left {
+/* .p-left {
   text-align: left;
-}
+} */
 </style>
