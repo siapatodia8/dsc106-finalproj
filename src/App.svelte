@@ -19,9 +19,8 @@
 <Meta />
 
 <Title />
-
-<MJvsLebron />
 <Scoreboard />
+<MJvsLebron />
 <SalaryProgression />
 <InteractivePoints /> 
 <InteractiveMins />
@@ -30,6 +29,7 @@
 <InteractiveBlocks />
 <Timeline />
 <Conclusion />
-<Resources />
+
+
 
 

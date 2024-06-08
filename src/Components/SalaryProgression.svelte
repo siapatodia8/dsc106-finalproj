@@ -175,7 +175,7 @@
         width: 100%;
     }
     .chart-container p {
-        max-width: 600px;
+        max-width: 500px;
         margin: 1rem auto;
         padding-top: 3rem;
     }
@@ -183,7 +183,7 @@
         margin: auto;
         width: 50%;
         margin: 1rem auto;
-        padding-left: 78px;
+        padding-left: 50px;
     }
 
     .axis-text {

@@ -1,11 +1,12 @@
 <section id="intro" class="centered-section">
   <div class="basketball-container">
-    <svg id="basketball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-      <circle cx="25" cy="25" r="20" fill="orange" stroke="black" stroke-width="2"/>
+    <svg id="basketball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> 
+      <circle cx="400" cy="400" r="375" fill="orange" stroke="black" stroke-width="4"/> 
     </svg>
-    <svg id="basket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-      <rect x="20" y="80" width="60" height="10" fill="brown"/>
-      <line x1="20" y1="80" x2="80" y2="80" stroke="black" stroke-width="2"/>
+    <!-- Larger basket -->
+    <svg id="basket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> <!-- Adjusted viewBox size -->
+      <rect x="50" y="450" width="750" height="40" fill="brown"/> <!-- Adjusted dimensions -->
+      <line x1="50" y1="450" x2="1200" y2="450" stroke="black" stroke-width="12"/> <!-- Adjusted dimensions -->
     </svg>
   </div>
   <h1 id="intro-hed">Who's The NBA G.O.A.T. ?</h1>
@@ -14,6 +15,20 @@
     <a  target="_blank"><b>Jovanna Fernando, Lewis Weng, Sia Patodia </b></a> <br>May, 2024
   </h3>
 </section>
+
+<p class="p-left" >
+  <br><br><br>
+  When discussing basketball’s greatest of all times, 2 names are often brought up:
+  Michael Jordan and LeBron James. Before James, Jordan was the undisputed best basketball
+  player to grace the court. In Jordan’s 13 years of playing basketball, he has made 6 finals
+  and won all 6 of them, with both of them being a 3-peat. Not only did he win 6 out of 6 finals,
+  he was also named the Finals MVP in all of them and won multiple MVPs during this time. 
+
+  <br><br>In both of their careers, it is undeniable that both players were key towards their teams’ success and that those teams
+  wouldn’t have won those titles without them. In our website, we will compare the in-game statistics between these 2 GOAT
+  candidates to weigh their contributions to their team.
+  <br><br><br>
+</p>
 
 <style>
   #intro {
@@ -52,28 +67,33 @@
 
   .basketball-container {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
     margin-bottom: 20px;
   }
 
-  #basketball {
+  .basketball-container #basketball {
     position: absolute;
-    top: -20px;
     left: 25px;
     width: 50px;
-    height: 50px;
-    animation: drop 1s ease-in-out infinite;
+    height: 80px;
+    animation: drop 0.8s ease-in-out infinite;
     animation-play-state: paused;
-  }
+}
 
   #basket {
     position: absolute;
-    bottom: 0;
+    bottom: -10;
     left: 0;
     width: 100px;
     height: 100px;
   }
+
+  p {
+  text-align: center; 
+  max-width: 700px; 
+  margin: 0 auto; 
+}
 
   @keyframes drop {
     0% {
@@ -97,6 +117,8 @@
       font-size: 1.5rem;
     }
   }
+
+
 </style>
 
 <script>
@@ -114,4 +136,5 @@
     setInterval(startAnimation, 3000);
   });
 </script>
+
 

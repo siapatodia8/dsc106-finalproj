@@ -3,20 +3,6 @@
   import { select, selectAll } from "d3-selection";
 </script>
 
-<p class="p-left" >
-  <br><br><br>
-  When discussing basketball’s greatest of all times, 2 names are often brought up:
-  Michael Jordan and LeBron James. Before James, Jordan was the undisputed best basketball
-  player to grace the court. In Jordan’s 13 years of playing basketball, he has made 6 finals
-  and won all 6 of them, with both of them being a 3-peat. Not only did he win 6 out of 6 finals,
-  he was also named the Finals MVP in all of them and won multiple MVPs during this time. 
-
-  <br><br>In both of their careers, it is undeniable that both players were key towards their teams’ success and that those teams
-  wouldn’t have won those titles without them. In our website, we will compare the in-game statistics between these 2 GOAT
-  candidates to weigh their contributions to their team.
-  <br><br><br>
-</p>
-
 <section>
   <div class="section-container">
     <div class="image-container">
@@ -107,7 +93,6 @@
 
   .text-container {
     font-size: 18px;
-    background: var(--bg);
     color: #000000;
     padding: 0.5rem 1rem;
     display: flex;
