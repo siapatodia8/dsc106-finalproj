@@ -153,12 +153,12 @@
 }
 
 .textbox h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .textbox p {
-  font-size: 14px;
+  font-size: 21px;
 }
   </style>
 
