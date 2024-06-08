@@ -1,22 +1,52 @@
 <section id="intro" class="centered-section">
   <div class="basketball-container">
-    <svg id="basketball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> 
-      <circle cx="400" cy="400" r="375" fill="orange" stroke="black" stroke-width="4"/> 
+    <!-- New basketball SVG -->
+    <svg id="ball" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" class="noSelect">
+      <defs>
+        <clipPath id="clip-path">
+          <circle cx="25" cy="25" r="24"/>
+        </clipPath>
+      </defs>
+      <title>Basketball</title>
+      <circle cx="25" cy="25" r="24" fill="#ee6730"/>
+      <g class="ballPath" stroke="black" stroke-width="0.8" fill="none">
+        <path class="ballStripe" d="M2.4,8.1a25,25,0,0,1,9.5-2.3c4.9-.2,9.5,1.2,13.8,2.5s5.5,1.9,9.3,2.1,4.5-.2,5.8-1a6.6,6.6,0,0,0,2.7-3.1"/>
+        <path class="ballStripe" d="M26.4,0c2.8,2.5,9.5,9,11.1,19.1C40.2,35.7,26.8,47.5,25.2,49"/>
+        <path class="ballStripe" d="M-5,26.5a71.1,71.1,0,0,1,23.5-9.1,77,77,0,0,1,33,.7"/>
+        <path class="ballStripe" d="M4,42.3a35.5,35.5,0,0,0,6.9-2.8c9.3-5,10.1-11.2,19.8-15.8,4.3-2,6.7-2.1,8.1-1.9,5.5.6,8.5,5.1,8.9,5.7,3.4,5.2.7,10.6.3,11.3"/>
+      </g>
     </svg>
-    <!-- Larger basket -->
-    <svg id="basket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"> <!-- Adjusted viewBox size -->
-      <rect x="50" y="450" width="750" height="40" fill="brown"/> <!-- Adjusted dimensions -->
-      <line x1="50" y1="450" x2="1200" y2="450" stroke="black" stroke-width="12"/> <!-- Adjusted dimensions -->
+    
+    <!-- New basket SVG -->
+    <svg id="basket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" preserveAspectRatio="xMidYMin">
+      <g id="net">
+        <line x1="33" y1="76" x2="74.1" y2="117.1" stroke="#888" stroke-width="0.5"/>
+        <line x1="87" y1="76" x2="45.6" y2="117.4" stroke="#888" stroke-width="0.5"/>
+        <line x1="78.3" y1="73.8" x2="43.2" y2="109" stroke="#888" stroke-width="0.5"/>
+        <line x1="68.1" y1="73.8" x2="41.9" y2="100" stroke="#888" stroke-width="0.5"/>
+        <line x1="58.2" y1="73.8" x2="39.5" y2="92.5" stroke="#888" stroke-width="0.5"/>
+        <line x1="47.4" y1="73.8" x2="36.5" y2="84.7" stroke="#888" stroke-width="0.5"/>
+        <line x1="40.7" y1="73.5" x2="76.3" y2="109.1" stroke="#888" stroke-width="0.5"/>
+        <line x1="51.6" y1="73.8" x2="77.7" y2="99.9" stroke="#888" stroke-width="0.5"/>
+        <line x1="61.9" y1="73.8" x2="80.4" y2="92.3" stroke="#888" stroke-width="0.5"/>
+        <line x1="72.2" y1="73.8" x2="82.7" y2="84.3" stroke="#888" stroke-width="0.5"/>
+        <line x1="39.5" y1="92.5" x2="64.1" y2="117.2" stroke="#888" stroke-width="0.5"/>
+        <line x1="42.7" y1="106.3" x2="54.5" y2="118.1" stroke="#888" stroke-width="0.5"/>
+        <line x1="80.4" y1="92.3" x2="54.5" y2="118.1" stroke="#888" stroke-width="0.5"/>
+        <line x1="77.3" y1="105.8" x2="65.7" y2="117.4" stroke="#888" stroke-width="0.5"/>
+    </g>       
+      <rect id="ring" x="28" y="70" width="64" height="6" rx="3" fill="#A52A2A" stroke="black" stroke-width="0.5"/>
     </svg>
   </div>
+  
   <h1 id="intro-hed">Who's The NBA G.O.A.T. ?</h1>
   <br><br>
   <h3 id="intro__date">
-    <a  target="_blank"><b>Jovanna Fernando, Lewis Weng, Sia Patodia </b></a> <br>May, 2024
+    <a target="_blank"><b>Jovanna Fernando, Lewis Weng, Sia Patodia </b></a> <br>May, 2024
   </h3>
 </section>
 
-<p class="p-left" >
+<p class="p-left">
   <br><br><br>
   When discussing basketball’s greatest of all times, 2 names are often brought up:
   Michael Jordan and LeBron James. Before James, Jordan was the undisputed best basketball
@@ -68,42 +98,43 @@
   .basketball-container {
     position: relative;
     width: 200px; /* Adjusted width */
-    height: 100px; /* Adjusted height */
+    height: 200px; /* Adjusted height */
     margin-bottom: 20px;
   }
 
-  .basketball-container #basketball {
+  .basketball-container #ball {
     position: absolute;
-    left: 25px;
-    width: 50px;
-    height: 80px;
-    animation: drop 0.8s ease-in-out infinite;
-    animation-play-state: paused;
-}
-
-  #basket {
-    position: absolute;
-    bottom: -10;
-    left: 0;
+    left: 50px;
+    top: 0;
     width: 100px;
     height: 100px;
+    animation: drop 0.8s ease-in-out infinite;
+    animation-play-state: paused;
+  }
+
+  .basketball-container #basket {
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    width: 250px;
+    height: 250px;
   }
 
   p {
-  text-align: center; 
-  max-width: 700px; 
-  margin: 0 auto; 
-}
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto; 
+  }
 
   @keyframes drop {
     0% {
       top: -20px;
     }
     70% {
-      top: 60px;
+      top: 100px;
     }
     100% {
-      top: 60px;
+      top: 100px;
     }
   }
 
@@ -117,15 +148,13 @@
       font-size: 1.5rem;
     }
   }
-
-
 </style>
 
 <script>
   import { onMount } from 'svelte';
 
   onMount(() => {
-    const basketball = document.getElementById('basketball');
+    const basketball = document.getElementById('ball');
     function startAnimation() {
       basketball.style.animationPlayState = 'running';
       setTimeout(() => {
@@ -136,5 +165,8 @@
     setInterval(startAnimation, 3000);
   });
 </script>
+
+
+
 
 
