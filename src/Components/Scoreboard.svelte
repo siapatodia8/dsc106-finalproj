@@ -81,7 +81,7 @@ const qtrDots = [
   <h3 class="marquee">Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! Welcome to the ultimate showdown between LeBron James and Michael Jordan! </h3>
 </div>
 
-<p class="p-left"> Our interactive scoreboard lets you decide who comes out on top. Add or subtract points for each player as you dive into their stats, achievements, and legendary moments. Every time you see "Who do you think won this round?", cast your vote by adding a point to your favorite. Join the fun and help settle the greatest basketball debate of all time!</p>
+<p class="p-left"> Our interactive scoreboard lets you decide who comes out on top. Add or subtract points for each player as you dive into their stats, achievements, and legendary moments. Every time you see "Who won this quarter?", cast your vote by adding a point to your favorite. Join the fun and help settle the greatest basketball debate of all time!</p>
 
 <div id="scoreboard" class="scoreboard">
   <div class="team">
@@ -227,7 +227,7 @@ const qtrDots = [
             animation: marquee 55s linear infinite;
             color: #D57428; 
             text-shadow: 0 0 18px #FFCC00;
-            font-size: 60px;
+            font-size: 65px;
         }
         @keyframes marquee {
             0% {
