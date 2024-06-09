@@ -160,7 +160,7 @@
 }
 
 .textbox p {
-  font-size: 21px;
+  font-size: 24px;
 }
 
 </style>

@@ -26,8 +26,7 @@
         James has played for 21 years and won 4 of the 10 finals he made. Amongst elite NBA players, LeBron has had
         one of the longest careers, with the longest being Vince Carter’s career lasting 22 years. </p>
       <br><br>
-      <p>While some people value Jordan’s 3-peats and 6 NBA rings, others value James’ longevity and his consistent high level
-        of performance across all 21 years, with an average of 27.1 points per game. In those 21 years
+      <p>While some people value Jordan’s 3-peats and 6 NBA rings, others value James’ longevity and his consistent high level of performance across all 21 years, with an average of 27.1 points per game. In those 21 years, his worst year was an impressive 20 points per game in his rookie season, and his best year was 31.4 points per game in his 2005-06 season. 
       </p>
       <br><br>
       <p style="font-size: 30px; color: #ee6730;">

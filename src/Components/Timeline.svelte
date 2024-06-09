@@ -73,11 +73,11 @@
     {/each}
   </div>
 </div>
-<br><br><br>
+<br><br>
 <p style="font-size: 30px; color: #ee6730;">
   <strong> Who won this quarter? <strong/>
 </p>
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p>The debate will continue, but one thing remains clear: both Jordan and LeBron have cemented their places in basketball history, each in their unique and legendary ways. Your choice depends on what you value most in a player, and that's what makes this debate so captivating. But, now that we have reached the end of their game... <br><br></p>
 <h2>  Who do you think is the NBA GOAT? </h2>
 

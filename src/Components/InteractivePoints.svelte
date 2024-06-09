@@ -104,7 +104,7 @@
 <div class="intro-paragraph">
   <p></p>
 </div>
-<br><br><br><br><br><br><br>
+
 <div class="chart-container">
   <div class="chart-wrapper">
     <div class="chart">
@@ -113,8 +113,9 @@
     <div class="textbox">
       <h1>Points Per Game
         </h1>
-      <p>Average points per game (PPG) per season is a crucial statistic for evaluating NBA players as it directly measures their scoring ability, highlighting their offensive impact and consistency over time.
-         High PPG indicates a player's role as a primary scoring option and their reliability in generating points for the team.<br><br>
+      <p>Jordan and James have a significant scoring impact and consistent performance over time, each averaging over 25 points per game. 
+      Both are dependable in generating points for their teams and rank among the top in NBA buzzer beaters (Jordan: 9, James: 7). 
+      In terms of points per game, Jordan surpasses James, consistently scoring 2 more points per game.<br><br>
         </p>
     </div>
     <div class="chart">
@@ -175,4 +176,6 @@
   margin-bottom: 20px; /* Add some space between the intro paragraph and the chart container */
 }
 </style>
+
+
 
