@@ -110,8 +110,7 @@
     top: 0;
     width: 100px;
     height: 100px;
-    animation: drop 0.8s ease-in-out infinite;
-    animation-play-state: paused;
+    animation: drop 1.5s ease-in-out infinite;
   }
 
   .basketball-container #basket {
@@ -132,11 +131,11 @@
     0% {
       top: -20px;
     }
-    70% {
+    50% {
       top: 100px;
     }
     100% {
-      top: 100px;
+      top: -20px;
     }
   }
 
@@ -152,7 +151,7 @@
   }
 </style>
 
-<script>
+<!-- <script>
   import { onMount } from 'svelte';
 
   onMount(() => {
@@ -166,4 +165,4 @@
     startAnimation();
     setInterval(startAnimation, 3000);
   });
-</script>
+</script> -->
