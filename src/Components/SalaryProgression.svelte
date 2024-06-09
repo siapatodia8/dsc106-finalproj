@@ -11,10 +11,10 @@
         const margin = {
             top: 70,
             bottom: 80,
-            left: 150,
+            left: 90,
             right: 90,
         };
-        const width = 800 - margin.left - margin.right;
+        const width = 780 - margin.left - margin.right;
         const height = 600 - margin.top - margin.bottom;
 
         const svgElement = d3.select(svg)
@@ -152,7 +152,7 @@
 </script>
 
 <p class="p-left">
-    One of the key components in the debate is their salary. we have adjusted it for inflation:
+    One of the key components in the debate is their salary. We have adjusted it for inflation:
 </p>
 
 <div class="chart-container">
@@ -161,11 +161,21 @@
 </div>
 
 <p class="p-left">
-    We can see that Jordan's salary has had 2 very steep changes, one from season 11 to season 12, the other from season 13 to season 14. Season 11 was the end of his 8-year contract, which also ended the year he won a championship. In that year, the Knicks offered him a ludicrous amount of money, and to keep Jordan on the team, the Bulls offered him $30 million dollars a year. In season 14, he returned to basketball after retiring. He played for the Washington Wizards, a team he part-owned. Jordan took a lower salary to help with the team's salary cap.<br><br>
-    When we trace the blue line, we can see that James' salary is consistently increasing. From the 6th season to the 7th season, we can see that James' salary went down. This is the year he switched from the Miami Heat to the Cleveland Cavaliers. Another thing to note is the salary increase from season 12 to season 13. After James' won the NBA Finals with the Cavaliers in season 12, his salary increased by $8 million.
+    We can see that Jordan's salary has had 2 very steep changes, one from season 11 to season 12, the other from season 13 to season 14. 
+    Season 11 was the end of his 8-year contract, which also ended the year he won a championship. In that year, the Knicks offered him a 
+    ludicrous amount of money, and to keep Jordan on the team, the Bulls offered him $30 million dollars a year. In season 14, he returned to 
+    basketball after retiring. He played for the Washington Wizards, a team he part-owned. Jordan took a lower salary to help with the team's 
+    salary cap.<br><br>
+    When we trace the blue line, we can see that James' salary is consistently increasing. From the 7th season to the 8th season, we can see 
+    that James' salary went down. This is the year he switched from the Miami Heat to the Cleveland Cavaliers. Another thing to note is the 
+    salary increase from season 13 to season 14. After James' won the NBA Finals with the Cavaliers in season 13, his salary increased by $8 
+    million. <br><br> It's important to note that NBA salaries today are higher than during Michael Jordan's era, so Jordan's earnings were 
+    consistently lower than LeBron James'. When Jordan signed his $30 million contract, he became the first player to earn over $20 
+    million. That year, the second-highest-paid player earned $20 million, meaning Jordan's salary was 150% of the second-highest.
 </p>
 <p>
-"Who do you think won this round?"</p>
+    Who won this quarter?
+</p>
 
 <style>
     .chart-container {
@@ -174,16 +184,10 @@
         align-items: center;
         width: 100%;
     }
-    .chart-container p {
-        max-width: 500px;
-        margin: 1rem auto;
-        padding-top: 3rem;
-    }
+
     #salary-chart {
-        margin: auto;
-        width: 50%;
-        margin: 1rem auto;
-        padding-left: 50px;
+        width: 100%;
+        max-width: 800px;
     }
 
     .axis-text {
@@ -205,7 +209,7 @@
         stroke-linecap: round;
         stroke-width: 3;
     }
-    
+
     .tooltip {
         position: absolute;
         background: rgba(0, 0, 0, 0.7);
@@ -217,13 +221,10 @@
     }
 
     p {
-  text-align: center; 
-  max-width: 700px; 
-  margin: 0 auto; 
-  padding-top: 50px;
-}
-
-/* .p-left {
-  text-align: left;
-} */
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
 </style>
+

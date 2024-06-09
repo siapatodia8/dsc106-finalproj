@@ -10,12 +10,13 @@
       <title>Basketball</title>
       <circle cx="25" cy="25" r="24" fill="#ee6730"/>
       <g class="ballPath" stroke="black" stroke-width="0.8" fill="none">
-        <path class="ballStripe" d="M2.4,8.1a25,25,0,0,1,9.5-2.3c4.9-.2,9.5,1.2,13.8,2.5s5.5,1.9,9.3,2.1,4.5-.2,5.8-1a6.6,6.6,0,0,0,2.7-3.1"/>
-        <path class="ballStripe" d="M26.4,0c2.8,2.5,9.5,9,11.1,19.1C40.2,35.7,26.8,47.5,25.2,49"/>
-        <path class="ballStripe" d="M-5,26.5a71.1,71.1,0,0,1,23.5-9.1,77,77,0,0,1,33,.7"/>
-        <path class="ballStripe" d="M4,42.3a35.5,35.5,0,0,0,6.9-2.8c9.3-5,10.1-11.2,19.8-15.8,4.3-2,6.7-2.1,8.1-1.9,5.5.6,8.5,5.1,8.9,5.7,3.4,5.2.7,10.6.3,11.3"/>
+        <path class="ballStripe" d="M6,10a22,22,0,0,1,8-1.8c4-.2,7.8,1,11.2,2.1s4.4,1.5,7.6,1.7,3.8-.2,4.8-.7a6,6,0,0,0,2.3-2.7"/>
+        <path class="ballStripe" d="M26.4,3c2.4,2,7.8,7.3,9.1,15.5C37,31,26.8,41,25.6,42.5"/>
+        <path class="ballStripe" d="M4,26.5a60,60,0,0,1,22-8,60,60,0,0,1,20.6,.5"/>
+        <path class="ballStripe" d="M8,37.3a28.5,28.5,0,0,0,6-2.4c7.8-4.1,8.5-9.2,16.8-13,3.5-1.6,5.6-1.7,6.8-1.5,4.6.4,7,3.6,7.3,4.1,2.7,3.9.6,7.8.3,8.4"/>
       </g>
-    </svg>
+    </svg>           
+    
     
     <!-- New basket SVG -->
     <svg id="basket" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" preserveAspectRatio="xMidYMin">
@@ -165,8 +166,3 @@
     setInterval(startAnimation, 3000);
   });
 </script>
-
-
-
-
-

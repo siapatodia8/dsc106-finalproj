@@ -38,6 +38,21 @@
     hoveredIndex = -1;
     tooltipHeading = "";
   }
+
+  let scrolled = false;
+
+  window.addEventListener('scroll', function() {
+    // Check if the user has scrolled to a specific point
+    if (!scrolled && window.scrollY > 500) { // Adjust 500 to the desired scroll position
+      startMarqueeAnimation(); // Call the function to start the animation
+      scrolled = true; // Set scrolled to true to prevent the animation from restarting
+    }
+  });
+
+  function startMarqueeAnimation() {
+    // Apply animation to the marquee line
+    document.querySelector('.marquee-line').style.animation = 'marquee-line 2s linear infinite';
+  }
 </script>
 
 <p>Now, let's take a journey through the years to explore some of the milestone achievements of 
@@ -164,6 +179,7 @@
     text-align: center; 
     padding: 0 30px;
   }
+  
   h2 {
   text-align: center; 
   max-width: 700px; 

@@ -108,7 +108,8 @@
     </div>
     <div class="textbox">
       <h1>Minutes Played Per Game</h1>
-      <p>This is a text box between the two circular bar plots.</p>
+      <p>With both players playing almost 38 minutes per game, they are crucial to their team's success. They are their team's captains and 
+      consistently perform well. They are also athletic and have high endurance, playing for most of the game.</p>
     </div>
     <div class="chart">
       <svg bind:this={mjSvgElement}></svg>
@@ -159,9 +160,11 @@
 }
 
 .textbox p {
-  font-size: 21px;
+  font-size: 24px;
 }
 
 </style>
+
+  
 
   

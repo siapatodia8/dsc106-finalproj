@@ -166,7 +166,7 @@
 }
 
 .textbox p {
-  font-size: 21px;
+  font-size: 24px;
   position: center;
 }
 
@@ -175,3 +175,4 @@
   margin-bottom: 20px; /* Add some space between the intro paragraph and the chart container */
 }
 </style>
+

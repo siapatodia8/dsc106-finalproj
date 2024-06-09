@@ -29,6 +29,11 @@
       <p>While some people value Jordan’s 3-peats and 6 NBA rings, others value James’ longevity and his consistent high level
         of performance across all 21 years, with an average of 27.1 points per game. In those 21 years
       </p>
+      <br><br>
+      <p>
+        Who won this quarter?
+    </p>
+    <br><br><br><br><br><br><br><br>
     </div>
     <div class="image-container">
       <h1 class='step-title'>Michael Jordan</h1>
