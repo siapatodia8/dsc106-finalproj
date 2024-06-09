@@ -38,23 +38,8 @@
     hoveredIndex = -1;
     tooltipHeading = "";
   }
-
-  let scrolled = false;
-
-  window.addEventListener('scroll', function() {
-    // Check if the user has scrolled to a specific point
-    if (!scrolled && window.scrollY > 500) { // Adjust 500 to the desired scroll position
-      startMarqueeAnimation(); // Call the function to start the animation
-      scrolled = true; // Set scrolled to true to prevent the animation from restarting
-    }
-  });
-
-  function startMarqueeAnimation() {
-    // Apply animation to the marquee line
-    document.querySelector('.marquee-line').style.animation = 'marquee-line 2s linear infinite';
-  }
 </script>
-
+<br><br><br><br><br><br><br><br><br><br>
 <p>Now, let's take a journey through the years to explore some of the milestone achievements of 
   LeBron James and Michael Jordan. Hover over the basketballs outlined in yellow to discover more!</p>
   <br><br>
@@ -88,7 +73,11 @@
     {/each}
   </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+<p style="font-size: 30px; color: #ee6730;">
+  <strong> Who won this quarter? <strong/>
+</p>
+<br><br><br><br><br><br><br><br><br><br><br>
 <p>The debate will continue, but one thing remains clear: both Jordan and LeBron have cemented their places in basketball history, each in their unique and legendary ways. Your choice depends on what you value most in a player, and that's what makes this debate so captivating. But, now that we have reached the end of their game... <br><br></p>
 <h2>  Who do you think is the NBA GOAT? </h2>
 
@@ -113,7 +102,7 @@
 
   .tooltip {
     position: absolute;
-    background-color: rgba(255, 253, 253, 1); 
+    background-color:  rgba(240, 237, 237, 0.94); 
     color: black;
     padding: 15px 20px;
     border-radius: 5px;
@@ -125,10 +114,16 @@
     top: 70px; /* Position the tooltip below the circle */
     left: 50%;
     transform: translateX(-50%);
+
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  text-align: center;
   }
 
   .tooltip h3 {
-    font-size: 1rem;
+    font-size: 30px;
     font-weight: bold;
     margin: 0 0 10px 0;
     text-decoration: underline;
@@ -137,7 +132,7 @@
   }
 
   .tooltip p {
-    margin: 0;
+    margin: 0 0 10px 0;
     text-align: center;
   }
 
@@ -179,7 +174,6 @@
     text-align: center; 
     padding: 0 30px;
   }
-  
   h2 {
   text-align: center; 
   max-width: 700px; 
@@ -198,4 +192,3 @@
     }
   }
 </style>
-

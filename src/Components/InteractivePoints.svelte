@@ -104,7 +104,7 @@
 <div class="intro-paragraph">
   <p></p>
 </div>
-
+<br><br><br><br><br><br><br>
 <div class="chart-container">
   <div class="chart-wrapper">
     <div class="chart">

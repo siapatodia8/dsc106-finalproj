@@ -7,8 +7,8 @@
     { name: "MJ", score: 0 }
   ];
 
-  let currentTime = "00:00";
-  let quarter = 0;
+  let currentTime = "12:07";
+  let quarter = 3;
 
   function incrementScore(index) {
     data[index].score += 1;

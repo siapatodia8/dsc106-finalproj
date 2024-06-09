@@ -30,10 +30,10 @@
         of performance across all 21 years, with an average of 27.1 points per game. In those 21 years
       </p>
       <br><br>
-      <p>
-        Who won this quarter?
+      <p style="font-size: 30px; color: #ee6730;">
+        <strong> Who won this quarter? <strong/>
     </p>
-    <br><br><br><br><br><br><br><br>
+    
     </div>
     <div class="image-container">
       <h1 class='step-title'>Michael Jordan</h1>

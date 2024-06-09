@@ -111,6 +111,10 @@
       </h1> 
       <p>Although James has his iconic chase down "blocked by James", both players have around the same number of blocks per game.
       </p>
+      <br> <br> <br> <br> <br><br> <br><br>
+      <p style="font-size: 30px; color: #ee6730;">
+        <strong> Who won this quarter? <strong/>
+    </p>
     </div>
     <div class="chart">
       <svg bind:this={mjSvgElement}></svg>

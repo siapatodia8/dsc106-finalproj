@@ -150,7 +150,7 @@
             .text("Salary ($)");
     });
 </script>
-
+<br><br><br><br><br><br><br><br>
 <p class="p-left">
     One of the key components in the debate is their salary. We have adjusted it for inflation:
 </p>
@@ -173,8 +173,8 @@
     consistently lower than LeBron James'. When Jordan signed his $30 million contract, he became the first player to earn over $20 
     million. That year, the second-highest-paid player earned $20 million, meaning Jordan's salary was 150% of the second-highest.
 </p>
-<p>
-    Who won this quarter?
+<p style="font-size: 30px; color: #ee6730;">
+    <strong> Who won this quarter? <strong/>
 </p>
 
 <style>
@@ -227,4 +227,5 @@
         padding-top: 50px;
     }
 </style>
+
 

@@ -57,9 +57,10 @@
 
   <br><br>In both of their careers, it is undeniable that both players were key towards their teams’ success and that those teams
   wouldn’t have won those titles without them. In our website, we will compare the in-game statistics between these 2 GOAT
-  candidates to weigh their contributions to their team.
-  <br><br><br>
+  candidates to weigh their contributions to their team. For more info check out our 
+  <a href="https://www.youtube.com/watch?v=Zas3KIQQ1gc">video</a>.
 </p>
+<br><br><br><br>
 
 <style>
   #intro {
